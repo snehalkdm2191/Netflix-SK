@@ -1,0 +1,82 @@
+[
+  {
+    "key": "Type",
+    "label": "Type",
+    "placeholder": "Type",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  },
+  {
+    "key": "Title",
+    "label": "Title",
+    "placeholder": "Title",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  },
+  {
+    "key": "Season",
+    "label": "Season",
+    "placeholder": "Season",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  },
+  {
+    "key": "Episod",
+    "label": "Episod",
+    "placeholder": "Episod",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  },
+  {
+    "key": "Year",
+    "label": "Year",
+    "placeholder": "Year",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  },
+  {
+    "key": "Description",
+    "label": "Description",
+    "placeholder": "Short description",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  },
+  {
+    "key": "Ratings",
+    "label": "Ratings",
+    "placeholder": "Ratings",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  },
+  {
+    "key": "File",
+    "label": "Image Link",
+    "placeholder": "",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  },
+  {
+    "key": "Trailer",
+    "label": "Trailer link",
+    "placeholder": "http://www... .com",
+    "type": "text",
+    "mode": "edit",
+    "required": false
+  },
+  {
+    "key": "Link",
+    "label": "Link",
+    "placeholder": "www.youtube.com",
+    "type": "text",
+    "mode": "edit",
+    "required": true
+  }
+]

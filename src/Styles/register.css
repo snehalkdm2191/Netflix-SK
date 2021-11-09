@@ -1,0 +1,66 @@
+.sign-up {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%), url("http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg");
+    background-size: cover;
+    position: relative;
+  }
+  .sign-up .top .wrapper {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sign-up .top .wrapper .logo {
+    height: 40px;
+  }
+  .sign-up .sign-up-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .sign-up .sign-up-container .sign-up-form {
+    width: 350px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #000;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sign-up .sign-up-container .sign-up-form input {
+    height: 40px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    padding-left: 10px;
+  }
+  .sign-up .sign-up-container .sign-up-form input::placeholder {
+    color: lightgray;
+  }
+  .sign-up .sign-up-container .sign-up-form button {
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .sign-up .sign-up-container .sign-up-form span {
+    color: lightgray;
+  }
+  .sign-up .sign-up-container .sign-up-form span b {
+    color: white;
+  }
+  

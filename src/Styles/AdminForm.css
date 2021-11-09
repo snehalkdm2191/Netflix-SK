@@ -1,0 +1,18 @@
+.form-container{
+    width: 60%;
+}
+.form-container label{
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+}
+.btn-admin-form{
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}

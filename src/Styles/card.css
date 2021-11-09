@@ -1,0 +1,29 @@
+.parcel-item-div {
+  transition: background 0.25s;
+  min-height: 4vh;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-around;
+  border-style: outset;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px -4px #666666;
+  overflow: hidden;
+}
+.pl-item {
+  text-align: center;
+  width: 25%;
+  padding: 5px 5px 5px 10px;
+  color: #fff;
+}
+.pl-item i{
+  color:#fff;
+}
+.pl-head {
+  font-weight: bold;
+  color: #fff;
+}
+@media screen and (min-width: 767px) {
+  .parcel-item-div {
+    align-items: center;
+  }
+}
