@@ -1,4 +1,5 @@
 import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -34,7 +35,9 @@ const Navbar = () => {
             <ArrowDropDown className="icon" />
             <div className="options">
               <span>Settings</span>
-              <span>Logout</span>
+              <span>
+                <Link to={"/logout"}>Logout</Link>
+              </span>
             </div>
           </div>
         </div>

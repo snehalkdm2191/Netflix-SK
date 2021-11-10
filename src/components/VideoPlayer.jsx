@@ -1,9 +1,8 @@
-import video from "../assets/video/bg-1.mp4";
 
-export default function VideoBG() {
+export default function VideoBG({ link }) {
   return (
     <video autoPlay muted loop playsInline className="bg">
-      <source src={video} type="video/mp4" />
+      <source src={link} type="video/mp4" />
     </video>
   );
 }

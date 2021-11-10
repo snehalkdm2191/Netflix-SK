@@ -18,6 +18,8 @@ export default function CreateForm() {
     Season: "",
     Episod: "",
     Year: "",
+    Category:"",
+    AgeLimit:"",
     Ratings:"",
     Trailer:"",
     Link:"",

@@ -32,6 +32,22 @@
     "required": true
   },
   {
+    "key": "Category",
+    "label": "Category",
+    "placeholder": "Drama, Comedy etc..",
+    "type": "text",
+    "mode": "create",
+    "required": true
+  },
+  {
+    "key": "AgeLimit",
+    "label": "Age Limit",
+    "placeholder": "16+",
+    "type": "text",
+    "mode": "create",
+    "required": true
+  },
+  {
     "key": "Year",
     "label": "Year",
     "placeholder": "Year",
