@@ -1,46 +1,50 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![CSS](https://img.shields.io/badge/CSS-CC6699?style=for-the-badge&logo=css&logoColor=css)](https://www.w3.org/TR/CSS/#css)
+[![HTML](https://img.shields.io/badge/HTML-ffd60a?style=for-the-badge&logo=html)](https://www.w3.org/TR/CSS/#css)
+[![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)](https://firebase.google.com/)
 
-In the project directory, you can run:
+# 1. NetFlix Copy
 
-### `npm start`
+This is the copy of Netflix which is cretaed for learning purpose... 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Click here to check on website](https://netflix-snehal.web.app/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To access the admin section here are credentials:
 
-### `npm test`
+email : snehalkdm2191@gmail.com
+password : snehal@1
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 2. Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These are the instructions to run the project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Open the terminal and navigate to the folder where this readme file is located.
+2. Install the project dependencies by typing `npm install` on the terminal.
+3. Start the project by typing `npm start` on the terminal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 3. Usage instructions
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To use this application you need to sign up firest and then you can use this app by login. On main page you can see category wise movies and series.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 4. Dependencies
 
-## Learn More
+Beside React JS and it's own dependencies, this project uses:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. node-sass for styles.
+2. Bootstrap for styles.
+3. Firebase Cloud Storage for uploading and hosting the images of each shopping item.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
