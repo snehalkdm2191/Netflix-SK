@@ -13,8 +13,10 @@ This is the copy of Netflix which is cretaed for learning purpose...
 
 To access the admin section here are credentials:
 
+```bash
 email : snehalkdm2191@gmail.com
 password : snehal@1
+```
 
 ---
 
