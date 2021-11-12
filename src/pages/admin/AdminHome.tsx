@@ -1,7 +1,6 @@
 //@ts-nocheck
 //NPM PAckages
-import { useState } from "react";
-
+import { Link } from "react-router-dom";
 //Local imports
 import ItemList from "../../components/admin/ItemList";
 import AdminForm from "../../components/admin/AdminForm";
@@ -16,6 +15,10 @@ export default function AdminHome() {
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
             alt=""
           />
+          <Link className="logout-btn" to={"/logout"}>
+            <span>LogOut </span>
+            <i class="fas fa-sign-out-alt"></i>
+          </Link>
         </div>
       </div>
       <section id="tabs">

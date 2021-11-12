@@ -1,32 +1,27 @@
-import { InfoOutlined, PlayArrow } from "@material-ui/icons";
+import { Link } from "react-router-dom";
+import getYouTubeID from "get-youtube-id";
 
-export default function Featured() {
+export default function Featured({ data }) {
+  const videoId = getYouTubeID(data.Trailer);
+  const ItemId = getYouTubeID(data.Link);
   return (
     <div className="featured">
-      <img
-        src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-        alt=""
+      <iframe
+        className="iframe-video"
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&&loop=1&mute=1&showinfo=0&controls=0`}
+        frameBorder="0"
+        allow="autoplay; encrypted-media; loop;"
+        allowFullScreen
+        title="video"
       />
       <div className="info">
-        <img
-          src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABUZdeG1DrMstq-YKHZ-dA-cx2uQN_YbCYx7RABDk0y7F8ZK6nzgCz4bp5qJVgMizPbVpIvXrd4xMBQAuNe0xmuW2WjoeGMDn1cFO.webp?r=df1"
-          alt=""
-        />
-        <span className="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          adipisci repellendus eum quasi illo, velit numquam, maxime tempora
-          sint deleniti, aliquid qui? Facilis, adipisci! Ratione hic repudiandae
-          temporibus eum earum?
-        </span>
+        <h1>{data.Title}</h1>
+        <span className="desc">{data.Description}</span>
         <div className="buttons">
-          <button className="play">
-            <PlayArrow />
+          <Link className="play" to={"/video/" + ItemId}>
+            <i className="far fa-play-circle"></i>
             <span>Play</span>
-          </button>
-          <button className="more">
-            <InfoOutlined />
-            <span>Info</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

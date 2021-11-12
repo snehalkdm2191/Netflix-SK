@@ -28,7 +28,8 @@ export default function EditForm({ data }) {
     const newCourse = { ...form };
     await updateDocument("Items", newCourse.id, newCourse);
     dispatchItems({ type: "UPDATE_ITEM", payload: form });
-    alert("Course updated");
+    alert("Item updated");
+    window.location.reload();
     history.push("/main");
   }
 

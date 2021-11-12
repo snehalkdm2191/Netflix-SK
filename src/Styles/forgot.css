@@ -1,0 +1,35 @@
+/* logout page css */
+.forgot-section{
+    width: 40%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .forgot-section-cancel{
+    margin-right: 10%;
+    background-color: brown;
+    height: 40px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .forgot-section-text{
+    color: #212529;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .btn-forgot-section{
+    background-color: #01497c;
+    color: #fff;
+    height: 40px;
+    font-weight: 700;
+    margin-top:4%;
+  }
+  @media (max-width: 550px) {
+    .forgot-section{
+        width: 100%;
+    }
+  }
+  

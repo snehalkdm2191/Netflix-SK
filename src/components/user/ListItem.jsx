@@ -1,9 +1,11 @@
 import { useState } from "react";
-import VideoPlayer from "../VideoPlayer";
+import { Link } from "react-router-dom";
+import getYouTubeID from "get-youtube-id";
 
 export default function ListItem({ index, key, data }) {
   const [isHovered, setIsHovered] = useState(false);
-  console.log("index",index);
+  const videoId = getYouTubeID(data.Trailer);
+  const ItemId = getYouTubeID(data.Link);
   return (
     <div
       className="listItem"
@@ -14,10 +16,18 @@ export default function ListItem({ index, key, data }) {
       <img src={data.File} alt="" />
       {isHovered && (
         <>
-          <VideoPlayer link={data.Trailer} />
+          <iframe
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=true&mute=true&showinfo=0&controls=0`}
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="video"
+          />
           <div className="itemInfo">
             <div className="icons">
-              <i className="fas fa-play icon"></i>
+              <Link to={"/video/" + ItemId}>
+                <i className="fas fa-play icon"></i>
+              </Link>
               <i className="fas fa-thumbs-up icon"></i>
               <i className="fas fa-thumbs-down icon"></i>
             </div>
@@ -26,10 +36,7 @@ export default function ListItem({ index, key, data }) {
               <span className="limit">+{data.AgeLimit}</span>
               <span>{data.Year}</span>
             </div>
-            <div className="desc">
-             {data.Description}
-            </div>
-            <div className="genre">{data.Category}</div>
+            <div className="desc">{data.Description}</div>
           </div>
         </>
       )}

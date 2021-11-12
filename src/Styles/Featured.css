@@ -14,7 +14,7 @@
   }
   .featured .category select {
     cursor: pointer;
-    background-color: var(--main-color);
+    background-color: #000;
     border: 1px solid white;
     color: white;
     margin-left: 20px;
@@ -43,7 +43,7 @@
   .featured .info .buttons {
     display: flex;
   }
-  .featured .info .buttons button {
+  .featured .info .buttons .play {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -55,15 +55,16 @@
     margin-right: 10px;
     cursor: pointer;
   }
-  .featured .info .buttons button.play {
+  .featured .info .buttons .play {
     background-color: white;
-    color: var(--main-color);
+    color: #000;
+    text-decoration: none;
   }
-  .featured .info .buttons button.more {
+  .featured .info .buttons Link.more {
     background-color: gray;
     color: white;
   }
-  .featured .info .buttons button span {
+  .featured .info .buttons .play span {
     margin-left: 5px;
   }
   

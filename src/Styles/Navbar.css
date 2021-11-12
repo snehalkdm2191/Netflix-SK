@@ -25,7 +25,8 @@
     height: 25px;
     margin-right: 40px;
   }
-  .navbar .container .left span {
+  .navbar .container .left .nav-link {
+    color: #fff;
     margin-right: 20px;
     cursor: pointer;
   }

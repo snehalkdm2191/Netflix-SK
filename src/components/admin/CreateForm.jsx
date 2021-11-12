@@ -42,6 +42,7 @@ export default function CreateForm() {
     await createDoc("Items", form);
     dispatchItems({ type: "CREATE_ITEM", payload: form });
     alert("Item created");
+    window.location.reload();
     history.push("/main");
   }
 

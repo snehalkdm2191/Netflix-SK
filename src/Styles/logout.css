@@ -1,0 +1,27 @@
+.logout-section{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .btn-logout-cancel{
+    margin-right: 8%;
+    background-color: brown;
+    height: 40px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .logout-text{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .btn-logout{
+    background-color: #fff;
+    color: #000;
+    height: 40px;
+    font-weight: 700;
+  }
+  

@@ -1,6 +1,6 @@
 //@ts-nocheck
 //NPM Packages
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 //Local imports
 import { useItems } from "../../state/ItemsProvider";
