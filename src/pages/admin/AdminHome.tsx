@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import ItemList from "../../components/admin/ItemList";
 import AdminForm from "../../components/admin/AdminForm";
 
+// You see, here you are calling AdminHome (i prefer AdminPage, but AdminHome is good enough)
+// Why do you called just Admin in the routes, it creates unncesary confusion.
 export default function AdminHome() {
   return (
     <div>
@@ -24,6 +26,7 @@ export default function AdminHome() {
       <section id="tabs">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
+            {/* We have discussed about this before, if the button needs too many attributes, create a custom button and hide the complexity there */}
             <button
               class="nav-link active"
               id="home-tab"

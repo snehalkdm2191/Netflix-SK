@@ -2,6 +2,8 @@ import LoginForm from "./login";
 import RegisterForm from "./register";
 import logo from "../../assets/img/logo.png";
 
+// Another problem with nesting here, you have 6 clossing div tags on the bottom.
+// At this point i will recommend studying about HTML semantic tags, and CSS to improve this particular area of your frontend skills
 export default function loginMainPage() {
   return (
     <div className="row">
@@ -28,6 +30,7 @@ export default function loginMainPage() {
                 <LoginForm />
 
                 <RegisterForm />
+                {/* 6 closing div tags */}
               </div>
             </div>
           </div>

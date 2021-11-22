@@ -55,13 +55,15 @@ export default function LoginPage() {
         <div className="login-form">
           <h1>Sign In</h1>
           <input
-            type="email" placeholder="Email or phone number"
+            type="email"
+            placeholder="Email or phone number"
             onChange={(event) => setEmail(event.target.value)}
             value={email}
           />
           <input
             autoComplete="new-password"
-            type="password" placeholder="Password"
+            type="password"
+            placeholder="Password"
             onChange={(event) => setPassword(event.target.value)}
             value={password}
           />
@@ -75,7 +77,7 @@ export default function LoginPage() {
             Login
           </button>
           <span>
-            New to Netflix? 
+            New to Netflix?
             <b>
               <Link to="/signUp">Sign up now</Link>
             </b>
@@ -84,7 +86,6 @@ export default function LoginPage() {
             </p>
           </span>
           <ErrorText error={error} />
-          
         </div>
       </div>
     </div>

@@ -5,8 +5,8 @@ import { auth, Providers } from "../../config/firebase";
 import logging from "../../config/logging";
 
 export default function ChangePasswordPage() {
-  const [changing, setChanging] = useState<boolean>(false);
-  const [password, setPassword] = useState<string>("");
+  const [changing, setChanging] = useState<boolean>(false); // you dont need the <boolean>, TypeScript understands that is boolean as soon as you wrote the keyword false.
+  const [password, setPassword] = useState<string>(""); // you dont need the <string>, TypeScript understand the hook as string because you initialize it with ""
   const [old, setOld] = useState<string>("");
   const [confirm, setConfirm] = useState<string>("");
   const [error, setError] = useState<string>("");
@@ -24,7 +24,7 @@ export default function ChangePasswordPage() {
     setChanging(true);
 
     if (auth.currentUser !== null) {
-        Providers.reset(auth.currentUser, password)
+      Providers.reset(auth.currentUser, password)
         .then(() => {
           logging.info("Password change successful.");
           history.push("/");
@@ -37,9 +37,11 @@ export default function ChangePasswordPage() {
     }
   };
 
+  // Good early return
   if (auth.currentUser?.providerData[0]?.providerId !== "password")
     return <Redirect to="/" />;
 
+  // You could create a InputField component and pass options in a json file to abstract the many attributes you are passing here
   return (
     <div id="ChangePassword">
       <div className="form-group">
@@ -85,4 +87,4 @@ export default function ChangePasswordPage() {
       <ErrorText error={error} />
     </div>
   );
-};
+}

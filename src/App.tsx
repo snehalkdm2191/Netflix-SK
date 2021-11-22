@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Switch } from "react-router-dom";
-import "./styles/App.css";
+import "./Styles/App.css";
 import { Spinner } from "reactstrap";
 import { auth } from "./config/firebase";
 import logging from "./config/logging";
@@ -35,7 +35,7 @@ export default function App() {
   return (
     <div>
       <BrowserRouter>
-        <Switch>{isLogged ? <Logged />: <Unlogged />}</Switch>
+        <Switch>{isLogged ? <Logged /> : <Unlogged />}</Switch>
       </BrowserRouter>
     </div>
   );

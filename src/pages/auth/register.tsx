@@ -30,7 +30,7 @@ export default function RegisterPage() {
         const newUser = {
           name: name,
           email: email,
-          role: "member"
+          role: "member",
         };
         createDocumentWithId("users", result.user.uid, newUser);
         history.push("/login");
@@ -62,7 +62,7 @@ export default function RegisterPage() {
       </div>
       <div className="sign-up-container">
         <div className="sign-up-form">
-        <h1>Sign Up</h1>
+          <h1>Sign Up</h1>
           <input
             type="name"
             name="name"

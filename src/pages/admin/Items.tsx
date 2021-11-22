@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 //Local imports
 import { useItems } from "../../state/ItemsProvider";
 import useFetch from "../../scripts/useFetch";
-import blankImg from "../../assets/img/image-placeholder.png"
+import blankImg from "../../assets/img/image-placeholder.png";
 
 export default function Items() {
   //Local state
@@ -18,6 +18,9 @@ export default function Items() {
   console.log("id", id);
 
   return (
+    // Nesting -1
+    // You have 7 divs here, this may be a new record but not a good one.
+    // This need a lot of refactoring
     <div className="container view-course-container">
       {(!Items.loading && Items.error) === null && (
         <div class="card view-course-card">

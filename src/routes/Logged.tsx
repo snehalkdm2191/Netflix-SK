@@ -14,9 +14,16 @@ import LogoutPage from "../pages/auth/logout";
 
 export default function Logged() {
   const { user }: any = useUsers();
+
+  const MainComponent = user.role === "admin" ? Admin : Member; // And here we would have detected the problem with names.
+  // We mentioned before Admin and Member are names for objects not pages, so this should be called AdminPage and MemberPage -1
+
   return (
     <>
       <Route component={LoginPage} exact path="/" />
+      {/* Refactoring -1 */}
+      {/* If both Admin and Member go to /main then you could have made the code like this */}
+      {/* <Route component={MainComponent} exact path="/main" /> */}
       {user.role === "admin" ? (
         <Route component={Admin} exact path="/main" />
       ) : (

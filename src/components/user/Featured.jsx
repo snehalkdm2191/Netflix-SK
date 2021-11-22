@@ -6,6 +6,7 @@ export default function Featured({ data }) {
   const ItemId = getYouTubeID(data.Link);
   return (
     <div className="featured">
+      {/* Don't use iframes, I gave the link to the React Youtube plugin to extract that functioanlity in a better way */}
       <iframe
         className="iframe-video"
         src={`https://www.youtube.com/embed/${videoId}?autoplay=1&&loop=1&mute=1&showinfo=0&controls=0`}
